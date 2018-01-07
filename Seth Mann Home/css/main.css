@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Oswald:300,400,500');
+/* ==========================================================================
+   Base styles:
+   ========================================================================== */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+p {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+/* ----------------------------------------
+Grid Systems
+------------------------------------------- */
+.col-1 {
+  flex-basis: 100%;
+}
+.col-1-2 {
+  flex-basis: 48%;
+}
+.col-2-3 {
+  flex-basis: 65%;
+}
+.col-1-3 {
+  flex-basis: 32%;
+}
+
+/* ----------------------------------------
+Nav
+------------------------------------------- */
+nav li {
+  display: inline-block;
+  margin: 10px;
+}
+/* ----------------------------------------
+Philosophy
+------------------------------------------- */
+.philosophy-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.philosophy {
+  padding: 50px;
+}
+/* ----------------------------------------
+Home
+------------------------------------------- */
+.home-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home {
+  padding: 50px;
+}
+/* ----------------------------------------
+Directions
+------------------------------------------- */
+.directions-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.directions {
+  padding: 50px;
+}
+/* ----------------------------------------
+Additional
+------------------------------------------- */
+.additional {
+  padding: 50px;
+}
+.additional-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
