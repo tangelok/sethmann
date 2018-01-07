@@ -19,7 +19,9 @@ h1, h2, h3, h4, h5 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
 }
-
+ul {
+  font-family: 'Merriweather', serif;
+}
 /* ----------------------------------------
 Grid Systems
 ------------------------------------------- */
@@ -35,6 +37,17 @@ Grid Systems
 .col-1-3 {
   flex-basis: 32%;
 }
+.col-1-4 {
+  flex-basis: 24%;
+}
+.res-row-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.vertical {
+  display: block;
+}
 
 /* ----------------------------------------
 Nav
@@ -44,26 +57,42 @@ nav li {
   margin: 10px;
 }
 /* ----------------------------------------
-Philosophy
+header-img
 ------------------------------------------- */
-.philosophy-wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.header-img {
+  background-image: url(../img/home.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 200px;
 }
-.philosophy {
-  padding: 50px;
+.header-img img {
+  margin-left: 190px;
 }
 /* ----------------------------------------
 Home
 ------------------------------------------- */
-.home-wrapper {
+.home-wrapper{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .home {
-  padding: 50px;
+  padding: 100px;
+}
+/* ----------------------------------------
+Residency
+------------------------------------------- */
+.residency-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.residency {
+  padding: 100px;
+}
+#residency-header {
+  text-align: center;
 }
 /* ----------------------------------------
 Directions
@@ -74,16 +103,31 @@ Directions
   justify-content: space-between;
 }
 .directions {
-  padding: 50px;
+  padding: 100px;
 }
 /* ----------------------------------------
 Additional
 ------------------------------------------- */
 .additional {
-  padding: 50px;
+  padding: 100px;
 }
 .additional-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.italics {
+  font-style: italic;
+}
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+.info-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer {
+  padding: 50px;
+  text-align: center;
 }
