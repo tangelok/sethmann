@@ -28,8 +28,8 @@ ul {
   font-size: 20px;
 }
 body {
-  background-color: #313D31;
-  color: #313D31;
+  background-color: #313E4D;
+  color: #313E4D;
 }
 /* body {
   background-image: url(../img/circles-light.png);
@@ -69,12 +69,12 @@ nav li {
   margin: 20px;
 }
 nav {
-  background-color: #849E90;
+  background-color: #8BA69B;
   position: fixed;
   width: 100%;
 }
 nav li a {
-  color: #313D31;
+  color: #313E4D;
   text-decoration: none;
 }
 nav li a:hover {
