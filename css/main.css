@@ -19,17 +19,23 @@ h1, h2, h3, h4, h5 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
 }
+h1 {
+    color: #086329;
+}
 ul {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 20px;
 }
 body {
+  background-color: #4C3437;
+}
+/* body {
   background-image: url(../img/circles-light.png);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-}
+} */
 /* ----------------------------------------
 Grid Systems
 ------------------------------------------- */
@@ -62,13 +68,15 @@ nav li {
   margin: 20px;
 }
 nav {
-  background-color: #D5DDDE;
+  background-color: #E0EEC6;
   position: fixed;
   width: 100%;
 }
 nav li a {
-  color: #2C4829;
+  color: #4C3437;
   text-decoration: none;
+}
+nav li a:hover {
 }
 nav ul {
   text-align: center;
@@ -93,12 +101,21 @@ Home
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #9DA69C;
+  background-color: #F3F3F3;
   padding: 50px;
 }
-.home {
+#home {
   padding: 100px;
-  color: white;
+  color: #4C3437;
+}
+#home h1 a {
+  color: #086329;
+  text-align: center;
+  font-size: 42px;
+  margin-left: 18px;
+}
+#home h1 a:hover {
+
 }
 .contact-button {
   text-transform: uppercase;
@@ -106,13 +123,91 @@ Home
   padding: 15px 25px 15px 25px;
   margin-top: 10px;
   transition-duration: 0.25s;
-  color: #2C4829;
-  border: 3px solid #2C4829;
+  color: #086329;
+  border: 3px solid #086329;
 }
 .contact-button:hover {
-  background-color: #2C4829;
+  background-color: #086329;
   color: white;
   cursor:pointer;
+}
+/* The Modal (background) */
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+   background-color: #fefefe;
+   margin: 15% auto; /* 15% from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+form {
+  font-family: 'Oswald', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  text-align: center;
+  color: #44545E;
+  padding: 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+input, textarea {
+ display: block;
+ font-family: 'Oswald', sans-serif;
+ text-transform: uppercase;
+ padding: 8px 25.5px;
+ text-align: center;
+ margin-bottom: 10px;
+ border: #44545E;
+ width: 100%;
+ font-size: 18px;
+}
+.form-button {
+ background-color: #2C4829;
+ color: white;
+ font-family: 'Oswald', sans-serif;
+ text-transform: uppercase;
+ padding: 5px 250px 5px 250px;
+ text-align: center;
+ margin-top: 10px;
+ width: 100%;
+ font-size: 18px;
+}
+.form-button:hover {
+ color: #2C4829;
+ background-color: white;
+ border: 2px solid #2C4829;
+ font-family: 'Oswald', sans-serif;
+ text-transform: uppercase;
+ padding: 5px 250px 5px 250px;
+ transition: 0.25s;
+ cursor:pointer;
 }
 /* ----------------------------------------
 Residency
@@ -121,12 +216,12 @@ Residency
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #9DA69C;
+  background-color: #F3F3F3;
   padding: 50px;
 }
-.residency {
+#residency {
   padding: 100px;
-  color: white;
+  color: #4C3437;
 }
 /* ----------------------------------------
 Directions
@@ -135,29 +230,31 @@ Directions
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #9DA69C;
+  background-color: #F3F3F3;
   padding: 10px;
 }
-.directions {
+#directions {
   padding: 90px;
-  color: white;
+  color: #4C3437;
 }
 /* ----------------------------------------
 Additional
 ------------------------------------------- */
-.additional {
+#additional {
   padding: 100px;
-  color: white;
+  color: #4C3437;
 }
 .additional-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #9DA69C;
+  background-color: #F3F3F3;
   padding: 50px;
 }
 .italics {
   font-style: italic;
+  color: #086329;
+  font-weight: 400;
 }
 /* ----------------------------------------
 Footer
@@ -166,20 +263,20 @@ Footer
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  color: #2C4829;
+  color: #4C3437;
 }
 .info-footer a {
-  color: #2C4829;
+  color: #4C3437;
   text-decoration: none;
 }
 footer {
   padding: 50px;
   text-align: center;
-  background-color: #D5DDDE;
+  background-color: #E0EEC6;
 }
 footer p {
-  color: #2C4829;
+  color: #4C3437;
 }
 footer p a {
-  color: #2C4829;
+  color: #4C3437;
 }
