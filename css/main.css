@@ -28,7 +28,8 @@ ul {
   font-size: 20px;
 }
 body {
-  background-color: #4C3437;
+  background-color: #313D31;
+  color: #313D31;
 }
 /* body {
   background-image: url(../img/circles-light.png);
@@ -68,15 +69,16 @@ nav li {
   margin: 20px;
 }
 nav {
-  background-color: #E0EEC6;
+  background-color: #849E90;
   position: fixed;
   width: 100%;
 }
 nav li a {
-  color: #4C3437;
+  color: #313D31;
   text-decoration: none;
 }
 nav li a:hover {
+  color: #E0EEC6;
 }
 nav ul {
   text-align: center;
@@ -106,7 +108,6 @@ Home
 }
 #home {
   padding: 100px;
-  color: #4C3437;
 }
 #home h1 a {
   color: #086329;
@@ -221,7 +222,6 @@ Residency
 }
 #residency {
   padding: 100px;
-  color: #4C3437;
 }
 /* ----------------------------------------
 Directions
@@ -235,14 +235,12 @@ Directions
 }
 #directions {
   padding: 90px;
-  color: #4C3437;
 }
 /* ----------------------------------------
 Additional
 ------------------------------------------- */
 #additional {
   padding: 100px;
-  color: #4C3437;
 }
 .additional-wrapper {
   display: flex;
@@ -263,20 +261,20 @@ Footer
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  color: #4C3437;
+  color: #313D31;
 }
 .info-footer a {
-  color: #4C3437;
+  color: #313D31;
   text-decoration: none;
 }
 footer {
   padding: 50px;
   text-align: center;
-  background-color: #E0EEC6;
+  background-color: #849E90;
 }
 footer p {
-  color: #4C3437;
+  color: #313D31;
 }
 footer p a {
-  color: #4C3437;
+  color: #313D31;
 }
