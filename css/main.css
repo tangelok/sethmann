@@ -31,12 +31,26 @@ body {
   background-color: #313E4D;
   color: #313E4D;
 }
-/* body {
-  background-image: url(../img/circles-light.png);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-} */
+button {
+	background-color: #3C4A53;
+	border: none;
+	font-size: .9rem;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 8px 15px;
+	margin: 0 10px;
+}
+
+img {
+	margin: 0 auto;
+	max-width: 800px;
+	display: none;
+}
+
+img:first-of-type {
+	display: block;
+}
 /* ----------------------------------------
 Grid Systems
 ------------------------------------------- */
@@ -255,6 +269,12 @@ Additional
   font-weight: 400;
 }
 /* ----------------------------------------
+Nearby
+------------------------------------------- */
+.nearby {
+  text-align: center;
+}
+/* ----------------------------------------
 Footer
 ------------------------------------------- */
 .info-footer {
@@ -277,4 +297,10 @@ footer p {
 }
 footer p a {
   color: #313D31;
+}
+footer p a:hover {
+  color: #E0EEC6;
+}
+footer a:hover {
+  color: #E0EEC6;
 }

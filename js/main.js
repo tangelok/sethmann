@@ -47,3 +47,57 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+/* ----------------------------------------
+Image Carousel
+------------------------------------------- */
+
+// Create a variable to keep track of which image we are currently on.
+var currentImageNumber = 0;
+
+// When the user clicks the next button (#next)
+   // if currentImageNumber is less than 3
+     // Add one to currentImageNumber
+     // Log currentImageNumber to the console
+  // else
+    // Set currentImageNumber to zero
+    // Log currentImageNumber to the console
+
+$('#next').on('click', function () {
+if (currentImageNumber < 3) {
+  currentImageNumber += 1;
+} else {
+  currentImageNumber = 0;
+}  console.log(currentImageNumber);
+$('img').fadeOut(.3);
+$('img').eq(currentImageNumber).fadeIn(.3);
+});
+// Fade out all images
+  // Fade in the image at the currentImageNumber
+
+// When the user clicks the previous button (#previous)
+$('#previous').on('click', function () {
+  if (currentImageNumber > 0) {
+    currentImageNumber -= 1;
+  } else {
+    currentImageNumber = 3;
+  } console.log(currentImageNumber);
+  // if currentImageNumber is greater than 0
+    // Subtract one from the currentImageNumber
+    // Log currentImageNumber to the console
+ // else
+   // Set currentImageNumber to three
+   // Log currentImageNumber to the console
+});
+function Timer() {
+  setInterval(function(){
+    if (currentImageNumber < 3) {
+      currentImageNumber += 1;
+    } else {
+      currentImageNumber = 0;
+  } $('img').fadeOut(.3);
+    $('img').eq(currentImageNumber).fadeIn(.3);
+  },5000);
+}
+Timer();
