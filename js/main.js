@@ -52,7 +52,6 @@ window.onclick = function(event) {
 /* ----------------------------------------
 Image Carousel
 ------------------------------------------- */
-
 // Create a variable to keep track of which image we are currently on.
 var currentImageNumber = 0;
 
@@ -65,13 +64,13 @@ var currentImageNumber = 0;
     // Log currentImageNumber to the console
 
 $('#next').on('click', function () {
-if (currentImageNumber < 3) {
+if (currentImageNumber < 11) {
   currentImageNumber += 1;
 } else {
   currentImageNumber = 0;
 }  console.log(currentImageNumber);
-$('img').fadeOut(.3);
-$('img').eq(currentImageNumber).fadeIn(.3);
+$('#carousel-img').fadeOut(.3);
+$('#carousel-img').eq(currentImageNumber).fadeIn(.3);
 });
 // Fade out all images
   // Fade in the image at the currentImageNumber
@@ -81,7 +80,7 @@ $('#previous').on('click', function () {
   if (currentImageNumber > 0) {
     currentImageNumber -= 1;
   } else {
-    currentImageNumber = 3;
+    currentImageNumber = 11;
   } console.log(currentImageNumber);
   // if currentImageNumber is greater than 0
     // Subtract one from the currentImageNumber
@@ -92,12 +91,12 @@ $('#previous').on('click', function () {
 });
 function Timer() {
   setInterval(function(){
-    if (currentImageNumber < 3) {
+    if (currentImageNumber < 11) {
       currentImageNumber += 1;
     } else {
       currentImageNumber = 0;
-  } $('img').fadeOut(.3);
-    $('img').eq(currentImageNumber).fadeIn(.3);
+  } $('#carousel-img').fadeOut(.3);
+    $('#carousel-img').eq(currentImageNumber).fadeIn(.3);
   },5000);
 }
 Timer();

@@ -10,6 +10,7 @@
 /* Fix for responsive images */
 img {
   max-width: 100%;
+  margin: 0 auto;
 }
 p {
   font-family: 'Merriweather', serif;
@@ -31,26 +32,7 @@ body {
   background-color: #313E4D;
   color: #313E4D;
 }
-button {
-	background-color: #3C4A53;
-	border: none;
-	font-size: .9rem;
-	color: white;
-	text-transform: uppercase;
-	font-weight: bold;
-	padding: 8px 15px;
-	margin: 0 10px;
-}
 
-img {
-	margin: 0 auto;
-	max-width: 800px;
-	display: none;
-}
-
-img:first-of-type {
-	display: block;
-}
 /* ----------------------------------------
 Grid Systems
 ------------------------------------------- */
@@ -110,6 +92,29 @@ header-img
 .header-img img {
   margin-left: 190px;
 }
+
+/* ----------------------------------------
+Image Carousel
+------------------------------------------- */
+button {
+	border: none;
+	font-size: .9rem;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 8px 15px;
+	margin: 0 10px;
+}
+#carousel-img {
+	margin: 0 auto;
+	max-width: 800px;
+	display: none;
+}
+
+#carousel-img:first-of-type {
+	display: block;
+}
+
 /* ----------------------------------------
 Home
 ------------------------------------------- */
