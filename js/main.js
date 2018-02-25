@@ -69,8 +69,8 @@ if (currentImageNumber < 11) {
 } else {
   currentImageNumber = 0;
 }  console.log(currentImageNumber);
-$('#carousel-img').fadeOut(.3);
-$('#carousel-img').eq(currentImageNumber).fadeIn(.3);
+$('.carousel-img').fadeOut(.3);
+$('.carousel-img').eq(currentImageNumber).fadeIn(.3);
 });
 // Fade out all images
   // Fade in the image at the currentImageNumber
@@ -95,8 +95,8 @@ function Timer() {
       currentImageNumber += 1;
     } else {
       currentImageNumber = 0;
-  } $('#carousel-img').fadeOut(.3);
-    $('#carousel-img').eq(currentImageNumber).fadeIn(.3);
+  } $('.carousel-img').fadeOut(.3);
+    $('.carousel-img').eq(currentImageNumber).fadeIn(.3);
   },5000);
 }
 Timer();
