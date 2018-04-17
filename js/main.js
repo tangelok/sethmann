@@ -100,3 +100,15 @@ function Timer() {
   },5000);
 }
 Timer();
+
+
+/* ----------------------------------------
+Hamburger
+------------------------------------------- */
+
+$('.hamburger').on('click', function (){
+  $('.side-nav').toggleClass('open');
+});
+$('.exit').on('click', function(){
+  $('.side-nav').removeClass('open');
+});

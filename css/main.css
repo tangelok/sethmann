@@ -79,6 +79,85 @@ nav li a:hover {
 nav ul {
   text-align: center;
 }
+.hamburger {
+  display: none;
+	font-size: 45px;
+	margin: 10px 0;
+	padding-left: 20px;
+  color: #2D5EB1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.hamburger:hover {
+  color: #FEC52A;
+  cursor: pointer;
+}
+
+.side-nav {
+  transform: translateX(-200px);
+  transition: all 350ms ease-in-out;
+}
+.open {
+  transform: translateX(0px);
+}
+#nav-sidebar {
+  width: 200px;
+  height: 100%;
+  background-color:#2D5EB1;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+#nav-sidebar ul {
+  color: white;
+}
+#nav-sidebar li {
+  margin-bottom: 10px;
+  margin-right: 35px;
+}
+#nav-sidebar li a {
+  text-decoration: none;
+  color: white;
+}
+#nav-sidebar li a:hover {
+  text-decoration: none;
+  color: #FCFFF5;
+}
+#nav-sidebar h2 {
+  color: #92CDCF;
+  text-align: center;
+}
+.exit {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-transform: none;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FEC52A;
+}
+.line {
+  border-bottom: 4px solid #FEC52A;
+  width: 35px;
+  margin-bottom: 6px;
+}
+.line:last-child {
+  margin-bottom: 0;
+}
+.side-nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+.hamburger-button {
+  margin-left: 50px;
+}
+.hamburger-button-home {
+  margin-left: 10px;
+}
 /* ----------------------------------------
 header-img
 ------------------------------------------- */
@@ -89,8 +168,14 @@ header-img
   background-position: center;
   padding: 200px;
 }
-.header-img img {
-  margin-left: 190px;
+.align-header img {
+   height: 250px;
+   width: 550px;
+}
+.align-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ----------------------------------------
@@ -116,6 +201,12 @@ button {
 
 .carousel-img:first-of-type {
 	display: block;
+}
+.align button {
+  text-align: center;
+}
+#previous {
+  margin-left: 20px;
 }
 
 /* ----------------------------------------
@@ -311,4 +402,16 @@ footer p a:hover {
 }
 footer a:hover {
   color: #E0EEC6;
+}
+/* ----------------------------------------
+Responsive Design
+------------------------------------------- */
+@media screen and (max-width: 750px) {
+.hamburger {
+  display: block;
+  text-align: center;
+}
+nav ul {
+  display: none;
+}
 }
