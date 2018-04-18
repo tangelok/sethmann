@@ -56,6 +56,13 @@ Grid Systems
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.dbl-col {
+  display: flex;
+  justify-content: center;
+}
+.col-other {
+  flex-basis: 40%;
+}
 
 /* ----------------------------------------
 Nav
@@ -104,7 +111,7 @@ nav ul {
 #nav-sidebar {
   width: 200px;
   height: 100%;
-  background-color:#2D5EB1;
+  background-color:#086329;
   color: white;
   position: fixed;
   top: 0;
@@ -138,10 +145,10 @@ nav ul {
     text-transform: none;
     font-size: 20px;
     text-decoration: none;
-    color: #FEC52A;
+    color: #F3F3F3;
 }
 .line {
-  border-bottom: 4px solid #FEC52A;
+  border-bottom: 4px solid #F3F3F3;
   width: 35px;
   margin-bottom: 6px;
 }
@@ -343,9 +350,6 @@ Residency
 Directions
 ------------------------------------------- */
 .directions-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   background-color: #F3F3F3;
   padding: 10px;
 }
