@@ -366,6 +366,10 @@ Directions
 .map {
   margin-top: 30px;
 }
+iframe {
+  width: 600px;
+  height: 450px;
+}
 /* ----------------------------------------
 Additional
 ------------------------------------------- */
@@ -487,6 +491,9 @@ Responsive Design
   .dbl-col {
     display: block;
   }
+  iframe {
+    width: 550px;
+  }
 }
 @media screen and (max-width: 750px) {
   .hamburger {
@@ -495,5 +502,120 @@ Responsive Design
   }
   nav ul {
     display: none;
+  }
+  iframe {
+    width: 500px;
+  }
+  #home {
+    padding: 70px;
+  }
+  #residency {
+    padding: 70px;
+  }
+  #additional {
+    padding: 70px;
+  }
+  #directions {
+    padding: 70px;
+  }
+}
+@media screen and (max-width: 700px) {
+  iframe {
+    width: 450px;
+  }
+  footer {
+    padding: 30px 30px 20px 30px;
+  }
+  .header-img {
+    padding: 180px;
+  }
+}
+@media screen and (max-width: 650px) {
+  iframe {
+    width: 400px;
+    height: 400px;
+  }
+  .learn-more {
+    margin: 0px 50px 0px 50px;
+  }
+  .res-text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  iframe {
+    width: 380px;
+  }
+  #home {
+    padding: 50px;
+  }
+  #residency {
+    padding: 50px;
+  }
+  #additional {
+    padding: 50px;
+  }
+  #directions {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 550px) {
+  iframe {
+    height: 350px;
+  }
+  .learn-more {
+    margin: 0px 30px 0px 30px;
+  }
+  .footer-add {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  iframe {
+    display: none;
+  }
+  .home-wrapper {
+    padding: 20px;
+  }
+  .residency-wrapper {
+    padding: 20px;
+  }
+  .additional-wrapper {
+    padding: 20px;
+  }
+  .directions-wrapper {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .footer-add {
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .info-footer {
+    display: block;
+  }
+  .mobile-col {
+    display: none;
+  }
+  .footer-add {
+    padding: 0px 20px 10px 20px;
+  }
+  .res-text{
+    padding: 0px;
+  }
+  .home-wrapper {
+    padding: 5px 5px 10px 5px;
+  }
+  .residency-wrapper {
+    padding: 5px;
+  }
+  .additional-wrapper {
+    padding: 5px 5px 10px 5px;
+  }
+  .directions-wrapper {
+    padding: 5px 5px 10px 5px;
   }
 }
