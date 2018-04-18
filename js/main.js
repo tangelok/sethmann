@@ -1,26 +1,7 @@
 /* ----------------------------------------
-Buttons
-------------------------------------------- */
-$('#read-more-problem').on('click', function () {
-     window.location.href="problem.html"
-  });
-$('#read-more-solution').on('click', function () {
-     window.location.href="solution.html"
-  });
-$('#read-more-about').on('click', function () {
-     window.location.href="about.html"
-  });
-
-
-  /* ----------------------------------------
   Contact Modal
   ------------------------------------------- */
 
-  $(".contact-button").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#contact-form").offset().top},
-        'slow');
-});
 
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -47,7 +28,11 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
+$(".contact-button").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#contact-form").offset().top},
+      'slow');
+});
 
 /* ----------------------------------------
 Image Carousel

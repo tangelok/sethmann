@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -63,22 +63,22 @@
             <p>Phone: 781.963.9116</p>
             <p>Email: sethmann2home@aol.com</p>
             <p>Call or Email us for a brochure!</p>
+            <!-- Trigger/Open The Modal -->
             <button class="contact-button" id="myBtn">Contact Us</button>
             <!-- The Modal -->
-            <div id="myModal" class="modal">
-            <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                  <form action="https://formspree.io/krineangelo@gmail.com" method="POST" id="contact-form">
+              <div id="myModal" class="modal">
+              <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <form action="https://formspree.io/sethmann2home@aol.com" method="POST" id="contact-form">
                   <input type="text" name="full-name" placeholder="Full Name" id="">
                   <input type="email" name="email" placeholder="Email">
-                  <input type="phone" name="phone" placeholder="Phone Number">
                   <input type="text" name="subject" placeholder="Subject" id="">
                   <textarea placeholder="Message" name="message" form="contact-form"></textarea>
                   <button class="form-button" type="submit">Submit</button>
                   </form>
+                </div>
               </div>
-            </div>
           </div>
         </div>
       </section>
@@ -127,9 +127,9 @@
         <div class="additional-wrapper">
           <div class="col-1-2">
               <h1>We're not a "Nursing Home" - We're just "Home"</h1>
-              <p>"I love living here! The Seth Mann Home is wonderful. The help is marvelous, the food is great, and the house is so clean! I like being able to come and go from the Home as I please and having beautiful grounds to stroll."<p class="italics">Jessie W. -- Resident, Prev. of Marshfield</p></p>
-              <p>"The Seth Mann Home is a blessing for my Mom and our gamily. Everyone connected with the home is loving, caring, and dedicated to making the women who live there healthy and happy. My Mom feels safe and loved at the Seth Mann."<p class="italics">Marilyn T. -- Brockton</p></p>
-              <p>"Finding Seth Mann Home was a godsend. My mother was getting to the point where she couldn't be left alone. To know that she was so well cared for at Seth Mann gave me such peace of mind. This home is a very, very special place!"<p class="italics">Donna O. -- Cohasset</p></p>
+              <p>"I love living here! The Seth Mann Home is wonderful. The help is marvelous, the food is great, and the house is so clean! I like being able to come and go from the Home as I please and having beautiful grounds to stroll."<p class="italics">Jessie W. -- Resident, Prev. of Marshfield, MA</p></p>
+              <p>"The Seth Mann Home is a blessing for my Mom and our gamily. Everyone connected with the home is loving, caring, and dedicated to making the women who live there healthy and happy. My Mom feels safe and loved at the Seth Mann."<p class="italics">Marilyn T. -- Brockton, MA</p></p>
+              <p>"Finding Seth Mann Home was a godsend. My mother was getting to the point where she couldn't be left alone. To know that she was so well cared for at Seth Mann gave me such peace of mind. This home is a very, very special place!"<p class="italics">Donna O. -- Cohasset, MA</p></p>
           </div>
           <div class="col-1-2 align">
             <div class="carousel-wrapper">
@@ -151,9 +151,9 @@
           </div>
         </div>
       </section>
-      <section id="directions">
+      <!-- <section id="directions">
         <div class="directions-wrapper">
-          <div class="col-1-2">
+          <div class="col-1-2 md-col-1" id="directions-left">
             <h1>To Learn More, Contact Us</h1>
             <p>As a private, not-for-profit organization, the Seth Mann Home offers reasonable rates -- and does not charge entrance or departure fees. All services listed are included in our rate.</p>
             <p>Choosing a new home can be a difficult decision.  The staff at Seth Mann is available to answer any questions you may have.  Please call us at 781-963-9116 to arrange for a visit to our home.</p>
@@ -167,7 +167,7 @@
               <li>The Seth Mann 2nd Home will be on your left at 349 Main Street.</li>
             </ul>
           </div>
-          <div class="col-1-2">
+          <div class="col-1-2 md-col-1">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2957.1080645163574!2d-71.04744858454976!3d42.1693699792001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e482f75fb7868d%3A0xbdd35348d4f1fe24!2s349+N+Main+St%2C+Randolph%2C+MA+02368!5e0!3m2!1sen!2sus!4v1515344863569" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="nearby">
               <h1>Nearby Seth Mann 2nd Home:</h1>
@@ -178,21 +178,53 @@
             </div>
           </div>
         </div>
+      </section> -->
+      <section id="directions">
+        <div class="directions-wrapper">
+          <div class="learn-more">
+            <h1>To Learn More, Contact Us</h1>
+            <p>As a private, not-for-profit organization, the Seth Mann Home offers reasonable rates -- and does not charge entrance or departure fees. All services listed are included in our rate.</p>
+            <p>Choosing a new home can be a difficult decision.  The staff at Seth Mann is available to answer any questions you may have.  Please call us at 781-963-9116 to arrange for a visit to our home.</p>
+          </div>
+          <div class="dbl-col">
+            <div class="driving-directions col-1-2">
+              <h1>Directions</h1>
+              <p>We are located at 349 North Main Street, Randolph, MA 02368</p>
+              <p>General Directions:</p>
+              <ul>
+                <li>From Rte 128 take exit 5A towards Randolph.</li>
+                <li>Merge onto Rte 28.</li>
+                <li>Travel for 2.8 miles.</li>
+                <li>The Seth Mann 2nd Home will be on your left at 349 Main Street.</li>
+              </ul>
+            </div>
+            <div class="nearby col-1-2">
+                <h1>Nearby Seth Mann 2nd Home:</h1>
+                <p>Shaw's Supermarket - 0.6 miles away</p>
+                <p>Walgreen's - 0.3 miles away</p>
+                <p>Randolph Senior Center - 1.4 miles away</p>
+                <p>Turner Free Library - 0.5 miles away</p>
+            </div>
+          </div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2957.1080645163574!2d-71.04744858454976!3d42.1693699792001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e482f75fb7868d%3A0xbdd35348d4f1fe24!2s349+N+Main+St%2C+Randolph%2C+MA+02368!5e0!3m2!1sen!2sus!4v1515344863569" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
       </section>
       <footer>
       <div class="info-footer">
         <div class="col-1-4 md-col-1-2 sm-col-1">
           <h3><a href="#home">Phone</a></h3>
           <p>781-963-9116</p>
-        </div>
-        <div class="col-1-4 md-col-1-2 sm-col-1">
           <h3><a href="#directions">Location</a></h3>
           <p>349 North Main Street</p>
           <p>Randolph, MA 02368</p>
         </div>
         <div class="col-1-4 md-col-1-2 sm-col-1">
+          <img src="img/sethmannlogo.gif" alt="logo">
+        </div>
+        <div class="col-1-4 md-col-1-2 sm-col-1">
           <h3>Additional Links</h3>
-          <p><a href="#home">Contact Us</a></p>
           <p>Website Photography by:</p>
           <p>Marilyn Aluisy Pageau, pagetoyou@gmail.com, <a href="https://www.facebook.com/pagetoyou"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></p>
         </div>
@@ -208,6 +240,7 @@
     </footer>
 
         <script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

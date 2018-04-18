@@ -336,6 +336,9 @@ Residency
 #residency {
   padding: 100px;
 }
+#residency img {
+  margin-top: 70px;
+}
 /* ----------------------------------------
 Directions
 ------------------------------------------- */
@@ -348,6 +351,16 @@ Directions
 }
 #directions {
   padding: 90px;
+  text-align: center;
+}
+.learn-more {
+  margin: 0px 150px 0px 150px;
+}
+.driving-directions ul {
+  list-style-type: none;
+}
+.map {
+  margin-top: 30px;
 }
 /* ----------------------------------------
 Additional
@@ -387,7 +400,7 @@ Footer
   text-decoration: none;
 }
 footer {
-  padding: 50px;
+  padding-bottom: 20px;
   text-align: center;
   background-color: #849E90;
 }
@@ -403,9 +416,13 @@ footer p a:hover {
 footer a:hover {
   color: #E0EEC6;
 }
+footer img {
+  padding-top: 20px;
+}
 /* ----------------------------------------
 Responsive Design
 ------------------------------------------- */
+
 @media screen and (max-width: 750px) {
 .hamburger {
   display: block;
