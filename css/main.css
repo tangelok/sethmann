@@ -518,6 +518,10 @@ Responsive Design
   #directions {
     padding: 70px;
   }
+  .align-header img {
+     height: 245px;
+     width: 545px;
+  }
 }
 @media screen and (max-width: 700px) {
   iframe {
@@ -542,6 +546,10 @@ Responsive Design
     padding-left: 40px;
     padding-right: 40px;
   }
+  .align-header img {
+     height: 235px;
+     width: 535px;
+  }
 }
 @media screen and (max-width: 600px) {
   iframe {
@@ -559,6 +567,10 @@ Responsive Design
   #directions {
     padding: 50px;
   }
+  .align-header img {
+     height: 225px;
+     width: 550px;
+  }
 }
 @media screen and (max-width: 550px) {
   iframe {
@@ -569,6 +581,10 @@ Responsive Design
   }
   .footer-add {
     padding-right: 20px;
+  }
+  .align-header img {
+     height: 175px;
+     width: 475px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -587,10 +603,18 @@ Responsive Design
   .directions-wrapper {
     padding: 20px;
   }
+  .align-header img {
+     height: 150px;
+     width: 450px;
+  }
 }
 @media screen and (max-width: 475px) {
   .footer-add {
     padding-right: 0px;
+  }
+  .align-header img {
+     height: 125px;
+     width: 425px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -617,5 +641,24 @@ Responsive Design
   }
   .directions-wrapper {
     padding: 5px 5px 10px 5px;
+  }
+  .align-header img {
+     height: 100px;
+     width: 400px;
+  }
+  #home {
+    padding: 20px;
+  }
+  #residency {
+    padding: 20px;
+  }
+  #additional {
+    padding: 20px;
+  }
+  #directions {
+    padding: 20px;
+  }
+  .line {
+    border-bottom: 4px solid #849E90;
   }
 }
